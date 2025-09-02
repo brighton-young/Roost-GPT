@@ -6,7 +6,7 @@ export default function Page() {
     { src: "/testimonials/1000012998.jpg", quote: "Thank you so much for all of your help with our child’s IEP.", author: "Parent Note" },
     { src: "/testimonials/1000012999.jpg", quote: "You have inspired her to write stories and enjoy writing.", author: "Family Christmas Card" },
     { src: "/testimonials/20250829_105932.jpg", quote: "You saved the day—thank you for sharing your expertise!", author: "Colleague" }
-  ] as const;
+  ];
 
   return (
     <>
