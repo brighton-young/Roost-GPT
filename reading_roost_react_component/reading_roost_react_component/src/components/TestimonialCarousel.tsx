@@ -1,1 +1,0 @@
-export default function TestimonialCarousel(){ return <div>Carousel works</div>; }

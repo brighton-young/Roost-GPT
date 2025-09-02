@@ -1,0 +1,23 @@
+
+:root{--brand:#0ea5a4;--cta:#f59e0b;--bg:#f9fafb;--muted:#6b7280}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;background:var(--bg);color:#111}
+a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1rem}.wrap.narrow{max-width:850px}
+.site-header{position:sticky;top:0;background:#fffdfcdd;border-bottom:1px solid #e5e7eb;backdrop-filter:blur(8px);z-index:10}
+.site-header .bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;gap:.6rem;align-items:center}.logo{border-radius:50%}
+.nav{display:flex;gap:1rem;align-items:center}.nav .cta{background:var(--cta);color:#fff;padding:.5rem .9rem;border-radius:.8rem}
+.section{padding:3rem 0}.section.alt{background:#fff}
+.hero{background-size:cover;background-position:center}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;padding:3rem 1rem;align-items:center}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:1rem;padding:1rem}
+.muted{color:var(--muted)}
+.footer{border-top:1px solid #e5e7eb;background:#fff;padding:1rem 0;text-align:center;color:#6b7280}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.nav{display:none}.cards{grid-template-columns:1fr}}
+.carousel{position:relative;margin-top:1rem}.track{display:flex;transition:transform .5s ease}.slide{position:relative;min-width:100%;border-radius:1rem;overflow:hidden;box-shadow:0 16px 36px rgba(0,0,0,.2);background:#000}.slide img{width:100%;display:block}
+.overlay{position:absolute;left:0;right:0;bottom:0;padding:1rem 1.2rem;background:linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 35%, rgba(0,0,0,.78) 100%);color:#fff}
+.navbtn{position:absolute;top:50%;transform:translateY(-50%);border:none;background:#111827AA;color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:24px}
+.prev{left:10px}.next{right:10px}.dots{display:flex;gap:.4rem;justify-content:center;margin-top:.6rem}
+.dots button{width:10px;height:10px;border-radius:50%;border:none;background:#cbd5e1}.dots button[aria-selected="true"]{background:#334155}
